@@ -1,17 +1,18 @@
 {
-    "name": "node-backend",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-      "start": "node app.js"
-    },
-    "author": "Bilal Hassan",
-    "license": "ISC",
-    "dependencies": {
-      "dotenv": "^8.2.0",
-      "express": "^4.17.1",
-      "mongoose": "^5.10.9"
-    }
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bilal Hassan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2"
   }
-  
+}

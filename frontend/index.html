@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bilal Full-Stack App</title>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  fetch('http://localhost:3000/')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('apiResponse').textContent = data;
-    })
-    .catch(err => console.error('Error fetching data:', err));
-});
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bilal Hassan">
+    <meta name="keywords" content="">
+    <title>Bilal's Static Website</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<h1>Full-Stack Application by Bilal Hassan</h1>
-<p>API Response: <span id="apiResponse">Loading...</span></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" alt="NODE JS">
+    <h1>Welcome to Bilal's Website</h1>
+    <p>This is a simple static webpage served by Nginx.</p>
+    <button onclick="showAlert()">Click Here</button>
+
+    <script>
+        function showAlert() {
+            alert("WELCOME TO THE WEBSITE");
+        }
+    </script>
 </body>
 </html>
