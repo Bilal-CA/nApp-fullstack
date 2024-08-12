@@ -1,0 +1,17 @@
+# Official Nginx image
+FROM nginx:alpine
+
+# Label the container
+LABEL maintainer="your-email@example.com"
+
+# Remove the default nginx index page
+RUN rm /usr/share/nginx/html/index.html
+
+# Copy the HTML file from your host to the container's nginx directory
+COPY index.html /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx and keep it running in the foreground
+CMD ["nginx", "-g", "daemon off;"]
