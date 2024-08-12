@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nApp-backend-deployment
+  namespace: fullstack-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nApp-backend
+  template:
+    metadata:
+      labels:
+        app: nApp-backend
+    spec:
+      containers:
+      - name: nApp-backend
+        image: bilal590/nApp-backend:1.1
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: app-config
