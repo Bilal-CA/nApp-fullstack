@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: napp-backend
-        image: bilal590/nApp-backend:1.1
+        image: bilal590/napp-backend:1.1
         ports:
         - containerPort: 3000
         envFrom:
